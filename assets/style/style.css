@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "RobotoSlab";  
+    src: url("/assets/fonts/RobotoSlab-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Intro";  
+    src: url("/assets/fonts/IntroDemo-BlackCAPS.otf") format("opentype");
+}
+
+body{
+    width: 1440px;
+    
+}
+/* Шапка  */
+.header_name{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 1440px;
+    border-bottom: 1px solid lightgray ;
+}
+.header_name_img{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+/* Логотип и корзина */
+.header_name_name{
+    padding-top: 12px;
+    text-align: center;
+    /* margin-bottom: 50px; */
+    grid-row: 1/2;
+    grid-column: 1/2;
+    
+}
+.headre_menu{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 75px;
+    margin-right: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_nav_button{
+    border-radius: 100px;
+    background-color: #5222D0; 
+    width: 115px;
+    height: 38px;
+}
+
+.nav_button_content{
+    color: #FFF;
+    font-family: 'Intro' ;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    text-decoration: none;
+    padding: 0px;
+
+}
+
+/* основное */
+.main{
+    display: flex;
+    margin-left: 126px;
+    
+}
+.main_conteyner{
+    margin-top: 75px;
+    display: grid;
+    grid-template-rows: 216px 96px 85px;
+    grid-gap: 30px;
+    
+}
+
+.main_conteyner_title{
+    color: #000;
+    font-family: 'Intro' ;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.main_conteyner_content{
+    color: #000;
+    font-family: 'RobotoSlab';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+}
+.main_conteyner_button{
+    width: 270px;
+    height: 84px;
+    background-color: #5222D0; 
+    border-radius: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main_conteyner_button_content{
+    color:#FFF;
+    font-family: 'Intro' ;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    text-decoration: none;
+m
+}
+/* Футер с навигацией */
+
+.nav_footer{
+    margin-top: 86px;
+    margin-bottom: 80px;
+    margin-left: 126px;
+    margin-right: 782px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: #5222D0; 
+    font-family: 'RobotoSlab';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;  
+}
